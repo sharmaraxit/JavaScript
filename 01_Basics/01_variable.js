@@ -1,7 +1,11 @@
 const accountId = 155443;
 let accountEmail = "nono@gmail.com";
 var accountPassword = "123456";
+<<<<<<< HEAD
 var accCity = "Delhi";
+=======
+var accountCity = "Delhi";
+>>>>>>> 590e63847315ff18e96858e803d1461b60257aa2
 
 /*we will try here changing values */
 
@@ -14,8 +18,13 @@ console.log(accountEmail);
 accountPassword = "newpassword";  // This will work because accountPassword is declared with var
 console.log(accountPassword);
 
+<<<<<<< HEAD
 accCity = "Mumbai";  // This will work because accCity is declared with var.
 console.log(accCity);
+=======
+accountCity = "Mumbai";  // This will work because accountCity is declared with var.
+console.log(accountCity);
+>>>>>>> 590e63847315ff18e96858e803d1461b60257aa2
 
 // This method of declaring variables is useful for maintaining the scope and preventing accidental reassignment of values.
 
