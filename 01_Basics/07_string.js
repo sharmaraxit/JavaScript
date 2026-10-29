@@ -28,7 +28,23 @@ console.log(gameName.toUpperCase().charAt(7));
 
 console.log(gameName.indexOf('i'));
 
-console.log(gameName.substring(0,4));
+console.log(gameName.substring(0,4)); // nono
+
+
+const newSstring = "   nonononi    ";
+console.log(newSstring.trim()); // ye starting and end spaces remove krta hai
+
+const url = "https://jsweb.com/nonowebsitedev"
+console.log(url.replace('nono','frontend')); // https://jsweb.com/frontendwesitedev
+
+const newUrl = new String(url);
+console.log(newUrl.includes('nono')); // checks whether your string is available or not as true or false.
+
+const person = "red-wine-dirty-swine";
+
+console.log(person.split('-')); // changes the string to array on the basis of '-'
+
+
 
 
 
