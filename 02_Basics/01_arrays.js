@@ -37,6 +37,19 @@ const newArray = myarray.join(); // binds the array and changes the type - array
 console.log(newArray);
 console.log(typeof newArray); // string
 
+
 // slice & splice
+
+console.log("A  ", myarray);
+
+const myna1 = myarray.slice(1,3);
+console.log(myna1); // [2,3] didn't include range value and also didn't manipulate original array
+
+console.log("B  ", myarray);
+
+const myna2 = myarray.splice(1,3);
+console.log(myna2); // [2,3,4] gets me pos value of 1,2,3 but it manipulated the original array and changed [1,2,3,4,5] to [1,5] it removed 2,3,4 from it.
+
+console.log("C  ", myarray);
 
 
