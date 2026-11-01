@@ -81,3 +81,32 @@ console.log(Object.entries(user1)); // [ [ 'name', 'nono' ], [ 'age', 24 ] ]
 // this check whether the property is available or not in the object
 console.log(user1.hasOwnProperty("name")); // true
 console.log(user1.hasOwnProperty("employeeID")); // false
+
+
+// OBJECT DE-STRUCTURE AND JSON
+
+const course = {
+    title: "JavaScript",
+    price: 1000,
+    instructor: "nono",
+}
+
+const {title} = course; // this is called object de-structuring. we can extract the values from the object and assign them to variables with the same name as the property name.
+console.log(title); // JavaScript
+
+const {price, instructor} = course; // we can also extract multiple values from the object and assign them to variables with the same name as the property name.
+console.log(price, instructor); // 1000 nono
+
+// JSON API format
+
+// {
+//     "name": "nono",
+//     "age": 24,
+//     "location": "Kolkata",
+//     "email": "nono@gmail.com",
+//     "employeeID": 12345
+// }
+
+// yes JSON is data format  just like object.
+// it is a string format
+// it can also be in array[] instead direct object{}. dont worry both are correct.
