@@ -73,6 +73,36 @@ jsUser["email"] = "nono1@gmail.com";
 console.log(jsUser); // no changes made in the object because we have frozen the object
 
 
+// function to get the keys of the object
+
+// function for greetings. just for testing purposes
+
+const JSUser = {
+    name: "John",
+    age: 30,
+    email: "john@gmail.com",
+    isLoggedIn: true,
+    location: "New York",
+    "full name": "John Doe"
+}
+
+JSUser.greetings = function(){
+    console.log("Hello JS User");
+    
+}
+
+// console.log(JSUser.greetings()); // Hello JS User
+// console.log(JSUser.greetings); // [Function: greetings] it didn't execute the function 
+                                // it just returned the function as it is.
+
+// THIS method
+
+JSUser.greetingsThis = function(){
+    console.log(`Hello JS User, ${this.name}`); // we also used backticks for string interpolation
+}                                               // we used this to check all the properties of the object and this will refer to the object itself
+
+console.log(JSUser.greetingsThis()); // Hello JS User, John
+console.log(JSUser.greetings());
 
 
 
