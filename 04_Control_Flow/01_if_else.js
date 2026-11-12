@@ -92,3 +92,12 @@ console.log(`If loop successfully executed`);
 // console.log(val1);
 
 // ye ek tarah se error handling ka part h aage dekhenge
+
+// Ternary Operator
+
+// condition ? true : false
+
+// const iceTeaPrice = 100;
+// iceTeaPrice <=80 ? console.log("less than 80") : console.log("more than 80");
+
+// ek single line me condition check
