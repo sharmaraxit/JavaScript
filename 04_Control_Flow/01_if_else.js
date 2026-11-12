@@ -66,15 +66,29 @@ console.log(`If loop successfully executed`);
 
 // real life example
 
-const userLoggedIn = true;
-const debitCard = true;
-const loggedInFromGoogle = false;
-const loggedInFromEmail = true;
+// const userLoggedIn = true;
+// const debitCard = true;
+// const loggedInFromGoogle = false;
+// const loggedInFromEmail = true;
 
-if(userLoggedIn && debitCard){  // && operator: all condition must be true to be executed
-    console.log("allowed to buy course");
-}
+// if(userLoggedIn && debitCard){  // && operator: all condition must be true to be executed
+//     console.log("allowed to buy course");
+// }
 
-if(loggedInFromEmail || loggedInFromGoogle){ // || operator: any one of them must be true to be executed
-    console.log("User logged in");
-}
+// if(loggedInFromEmail || loggedInFromGoogle){ // || operator: any one of them must be true to be executed
+//     console.log("User logged in");
+// }
+
+// Nullish Coalescing Operator (??): null undefined 
+
+// ye null k basis pr safety provide krta h ab tm nhi 
+// chahoge ki tmhra koi function code ka value null aye
+
+// let val1;
+// // val1 = 5 ?? 10  // -> 5
+// // val1 = null ?? 10 // -> 10
+// // val1 = undefined ?? 15 // -> 15
+// val1 = null ?? 10 ?? 20 // -> 10
+// console.log(val1);
+
+// ye ek tarah se error handling ka part h aage dekhenge
