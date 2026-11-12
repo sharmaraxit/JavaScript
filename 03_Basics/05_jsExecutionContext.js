@@ -46,3 +46,28 @@ function addNum(num1,num2){
 
 let result1 = addNum(val1, val2);
 let result2 = addNum(20, 10);
+
+
+// Call Stack
+/*
+      |                              |              suppose we have function methods
+      |         three()              |              one(), two(), three()
+      |          two()               |
+      |          one()               |
+      |------------------------------|
+      |           Global             |
+      --------------------------------
+
+
+      here a rule called LIFO used which means Last In First Out
+
+      diagram me dekho :
+      1. call stack me hmesha global execution hoga hi compulsory hai
+      
+      2. fir agar sirf one() call hua to obv wo execute hoke bahar nikal jaega
+
+      3. lekin agar one() call hua then same time pr two() aur three() dono call hua
+         tab LIFO chalega.
+
+      4. fir sabse pehle three() execute hoke memory phase se bahar niklega fir two() fir one()
+*/
