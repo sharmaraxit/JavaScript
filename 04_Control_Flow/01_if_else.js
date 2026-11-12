@@ -1,0 +1,80 @@
+// comparison operator
+
+// <, >, <=, >=, ==, !=, ===
+
+// IF Statement
+
+/*
+
+if(condition){
+
+}
+
+condition true hoga to hmlog loop k andar jaenge or else nhi jaenge
+same agar condtion false dede to loop k andar tab hi jaega jab condition false niklega
+
+*/
+
+/*
+let user1 = "Nono";
+const isUserLoggedIn = true;
+
+if(isUserLoggedIn == false){
+    console.log(`not logged in, please login first`);
+}
+else{
+    console.log(`welcome ${user1}`);
+}
+
+console.log(`If loop successfully executed`);
+*/
+
+// output:
+// welcome nono
+// if loop successfully executed
+
+// one more example
+
+// const score = 200;
+
+// if(score > 100){
+//     const power = "fly";  // iska scope iske if statement k andar tak hi available hai
+//     console.log(`User Power: ${power}`);
+// }
+
+// short hand notation
+// example
+
+// const balance = 1000;
+
+// if(balance > 500) console.log("test"); // ye ek hi line me execute hota hai
+
+// nesting if-else
+
+// const balance = 1000;
+
+// if(balance < 500){
+//     console.log("less than 500");
+// }else if(balance < 750){
+//     console.log("less than 750");
+// }else if(balance < 900){
+//     console.log("less than 900");
+// } else {
+//     console.log("less than 1200");
+    
+// }
+
+// real life example
+
+const userLoggedIn = true;
+const debitCard = true;
+const loggedInFromGoogle = false;
+const loggedInFromEmail = true;
+
+if(userLoggedIn && debitCard){  // && operator: all condition must be true to be executed
+    console.log("allowed to buy course");
+}
+
+if(loggedInFromEmail || loggedInFromGoogle){ // || operator: any one of them must be true to be executed
+    console.log("User logged in");
+}
